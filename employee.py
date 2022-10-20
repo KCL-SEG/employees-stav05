@@ -26,15 +26,15 @@ class Employee:
             temp = f'{self.name} works on a monthly salary of {self.salary}'
             breakdown += temp
         elif self.hours and self.rate:
-            breakdown += f'{self.name} works on a contract of {self.hours} hours at {self.rate}/hour '
+            breakdown += f'{self.name} works on a contract of {self.hours} hours at {self.rate}/hour'
 
 
         if self.bonus_rate and self.contracts:
-            breakdown += f'and recieves a comission for {self.contracts} contract(s) at {self.bonus_rate}/contract'
+            breakdown += f' and receives a commission for {self.contracts} contract(s) at {self.bonus_rate}/contract'
         elif self.bonus_salary:
-            breakdown += f'and recieves a bonus comission of {self.bonus_salary}'
+            breakdown += f' and receives a bonus commission of {self.bonus_salary}'
 
-        breakdown += f'. Their total pay is {self.get_pay()}.'
+        breakdown += f'.  Their total pay is {self.get_pay()}.'
 
         return breakdown
 
